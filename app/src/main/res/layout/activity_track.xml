@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:text="@tools:sample/lorem[5]" />
+
+    <TextView
+        android:id="@android:id/text1"
+        style="@style/Widget.Wilson.Item.Album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_album_black_24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        tools:text="@tools:sample/lorem[5]" />
+
+</LinearLayout>

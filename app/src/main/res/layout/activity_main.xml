@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/random_track_section"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/list_item_album" />
+
+    <TextView
+        android:id="@+id/random_track_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="?android:listPreferredItemPaddingStart"
+        android:paddingStart="?android:listPreferredItemPaddingEnd"
+        android:text="@string/random_track"
+        android:textAppearance="?android:listSeparatorTextViewStyle"
+        app:layout_constraintBottom_toTopOf="@id/random_track"
+        app:layout_constraintTop_toBottomOf="@android:id/list" />
+
+    <TextView
+        android:id="@+id/random_track"
+        style="@style/Widget.Wilson.Item.Track"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/random_track_section"
+        tools:text="@tools:sample/lorem[10]" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,30 @@
+<resources>
+
+    <style name="Theme.Wilson" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:listDivider">@drawable/inset_divider</item>
+    </style>
+
+    <style name="Widget.Wilson" parent="android:Widget" />
+
+    <style name="Widget.Wilson.Item">
+        <item name="android:drawablePadding">32dp</item>
+        <item name="android:drawableTint">?colorAccent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">?android:listPreferredItemHeight</item>
+        <item name="android:paddingStart">?android:listPreferredItemPaddingStart</item>
+        <item name="android:paddingEnd">?android:listPreferredItemPaddingEnd</item>
+    </style>
+
+    <style name="Widget.Wilson.Item.Album">
+        <item name="android:drawableStart">@drawable/ic_album_black_24dp</item>
+    </style>
+
+    <style name="Widget.Wilson.Item.Track">
+        <item name="android:drawableStart">@drawable/ic_audiotrack_black_24dp</item>
+    </style>
+
+</resources>
